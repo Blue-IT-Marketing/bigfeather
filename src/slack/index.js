@@ -2,9 +2,9 @@ import Axios from "axios";
 import app_name from '../constants';
 
 
-export let sendMessageToSlack = async (channel,hook,message) => {
+export let sendMessageToSlack = async (channel, hook, messageBody) => {
     
-    let result = {status:false,error:{code:'',messageBody}};
+    let result = {status:false,error:{code:'',message:''}};
     try{
         let slackBody = {
             mkdwn:true,
