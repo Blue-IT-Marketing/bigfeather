@@ -1,0 +1,33 @@
+application: bigfeather
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+
+handlers:
+- url: /static
+  static_dir: templates/static
+  secure: always
+- url: .*
+  script: index.app
+  secure: always
+
+libraries:
+
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: "latest"
+
+- name: ssl
+  version: "latest"
+
+inbound_services:
+- mail
+- warmup
+- channel_presence
+
+env_variables:
+    FIREBASE_API_KEY: 3d47934b2ba92d36d813b6923610508d
