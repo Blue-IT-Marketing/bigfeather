@@ -1,10 +1,10 @@
 import Axios from "axios";
-
+import app_name from '../constants';
 
 
 export let sendMessageToSlack = async (channel,hook,message) => {
     
-    let result = {status:false,error:{code:'',message:''}};
+    let result = {status:false,error:{code:'',messageBody}};
     try{
         let slackBody = {
             mkdwn:true,
@@ -14,7 +14,11 @@ export let sendMessageToSlack = async (channel,hook,message) => {
                 text:`{...data}`
             }))
         }
-        await  Axios.post(channel+hook,).then( result => {
+        if (messageBody === ''){
+            messageBody = slackBody
+        }
+
+        await  Axios.post(channel+hook,messageBody).then( result => {
             if (result.status === 200){
                 return result.data;
             }
