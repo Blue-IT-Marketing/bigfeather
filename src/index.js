@@ -1,8 +1,8 @@
 import 'react-app-polyfill/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App/MyApp';
 import './index.css';
-import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
 // import {store} from './redux-store';
 // import {Provider} from 'react-redux';
