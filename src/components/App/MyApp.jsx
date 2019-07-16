@@ -5,6 +5,10 @@ import {routes} from '../../constants';
 
 import Header from '../Layout/Header/Header';
 import Home from '../Home/Home';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
+import Profile from '../Profile/Profile';
+import Login from '../Auth/Login/Login';
 
 export default function App () {
   return (
@@ -13,9 +17,13 @@ export default function App () {
  
         <Router>
           <Header/>
-            <Route exact path={routes.home_page} component={Home} />
-
-
+            <div className='App-Body'>
+              <Route exact path={routes.home_page} component={Home} />
+              <Route exact path={routes.about_page} component={About} />
+              <Route exact path={routes.contact_page} component={Contact} />
+              <Route path={routes.profile_page} component={Profile} />
+              <Route path ={routes.login_page} component={Login} />
+            </div>
         </Router> 
 
       </div>

@@ -4,7 +4,7 @@ export default function SideBar (){
   return (
     <div className='sidebar'>
         <ul>
-            <li><strong> </strong></li>
+            <li><strong> Sidebar </strong></li>
         </ul>
     </div>
   )
