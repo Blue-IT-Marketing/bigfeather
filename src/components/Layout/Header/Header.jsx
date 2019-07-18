@@ -1,26 +1,35 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './Header.css';
 import MenuItems from '../MenuItems/MenuItems';
+import { routes } from '../../../constants';
 
 function Header(props) {
+
+    let SidebarCollapse = () => {
+
+    }
+
     return (
-        <div>
+        
             <Fragment>
-                <header className='App-header'>
-                    <nav className='Header-nav'>
-                        <div className='Header-Logo'>Big Feather Music Portal</div>
-                        <div className='spacer'> </div>
-                        <div className='spacer'> </div>
-                        <div className='spacer'> </div>
-                        <div className='Header-nav-items'>
-                            <MenuItems />
-                        </div>
-                        
+                <header className="main-header">                    
+                    <Link to={routes.home_page} className="logo">                    
+                        <span className="logo-mini"><b>B</b>-F</span>                    
+                        <span className="logo-lg"><b>Big</b> Feather</span>
+                    </Link>                    
+                    <nav className="navbar navbar-static-top">                    
+                        <a to="#" className="sidebar-toggle" data-toggle="offcanvas" data-target="sidebar-menu" role="button" onClick={SidebarCollapse()}>
+                            <span className="sr-only">B-Feather</span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                        </a>
                     </nav>
-                </header>
+                </header>                
             </Fragment>
-        </div>
+        
     )
 }
 

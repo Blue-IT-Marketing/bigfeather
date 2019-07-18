@@ -10,24 +10,26 @@ export default function Login() {
     
     return (
         <Fragment>
-            <div className='Login'>
-                <div className='header'>
-                    <h3>Login User</h3>    
+            <div className='box box-body'>
+                <div className='box-header'>
+                    <h3 className='box-title'>Login User</h3>    
                 </div>
-
-                <form className='form-horizontal' onSubmit={e => HandleSubmit(e)}>
-                    <div className='form-group'>
-                        <label> Login Name </label>
-                        <input type='text' className='form-control' name='loginName'/>
-                    </div>
-                    <div className='form-group'>
-                        <label>Password</label>
-                        <input type='password' className='form-control' name='password' />
-                    </div>
-                    <div className='form-group'>
-                        <button type='submit' className='btn btn-primary btn-lg'><strong> Submit</strong></button>
-                    </div>
-                </form>
+                <div className='box-footer'>
+                
+                    <form className='form-horizontal' onSubmit={e => HandleSubmit(e)}>
+                        <div className='form-group'>                            
+                            <input type='text' className='form-control' name='loginName' placeholder='Login Name' />
+                        </div>
+                        <div className='form-group'>                            
+                            <input type='password' className='form-control' name='password' placeholder='Password' />
+                        </div>
+                        <div className='form-group'>
+                            <button type='submit' className='btn btn-primary btn-block btn-lg'><strong> Submit</strong></button>
+                        </div>
+                    </form>
+                
+                    
+                </div>
                 
             </div>
         </Fragment>

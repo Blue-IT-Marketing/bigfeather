@@ -5,8 +5,11 @@ import './Home.css';
 export default function Home (){
   return (
       <Fragment>
-        <div className='Home'>
-            <h3> Big feather music portal </h3>
+        <div className='box box-body'>
+          <div className='box-header'>
+            <h3 className='box-title'> Big feather music portal </h3>
+          </div>
+            
         </div>  
       </Fragment>    
   )
