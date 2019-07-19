@@ -12,6 +12,7 @@ import Login from '../Auth/Login/Login';
 import Signup from '../Auth/Signup/Signup';
 import SideBar from '../Layout/SideBar/SideBar';
 import Footer from '../Layout/Footer/Footer';
+import Forget from '../Auth/Forget/Forget';
 
 export default function App () {
   return (
@@ -31,6 +32,7 @@ export default function App () {
                     <Route path={routes.profile_page} component={Profile} />
                     <Route path ={routes.login_page} component={Login} />
                     <Route path={routes.signup_page} component={Signup} />
+                    <Route path={routes.forget_password_page} component={Forget} />
                   </section>
               </section>
             </div>
