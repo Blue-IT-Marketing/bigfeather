@@ -3,8 +3,11 @@ import React, { Fragment } from 'react'
 export default function Signup() {
     return (
         <Fragment>
-            <div>
-                 <h3>Signup</h3>   
+            <div className='box box-body'>
+                <div className='box box-header'>
+                    <h3 className='box-title'>Signup</h3>   
+                </div>
+                
                  <form className='form-horizontal' >
                     <div className='form-group'>
                         <label>First Name</label>
@@ -29,8 +32,8 @@ export default function Signup() {
                     <div className='form-group'>
                         <button type='submit' className='btn btn-success btn-lg' name='singup'><strong> Subscribe</strong></button>
                     </div>
-
                  </form>
+                 
             </div>
         </Fragment>
     )

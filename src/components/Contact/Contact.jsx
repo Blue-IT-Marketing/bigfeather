@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import './Contact.css';
+
 
 export default function Contact() {
 
@@ -78,7 +78,12 @@ export default function Contact() {
                             <textarea
                                 name='message'
                                 placeholder='Message...'
+                                className='form-control'
                             ></textarea>
+                        </div>
+
+                        <div className='form-group'>
+                            <button className='btn btn-success btn-block btn-lg'><strong> Send Message</strong></button>
                         </div>
 
                     </form>

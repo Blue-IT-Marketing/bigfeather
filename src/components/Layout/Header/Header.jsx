@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import './Header.css';
 import MenuItems from '../MenuItems/MenuItems';
 import { routes } from '../../../constants';
 

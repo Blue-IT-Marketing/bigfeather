@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
-import './Forget.css';
+
 
 export default function Forget(){
   return (
     <Fragment>
-        <div className='Forget'>
-            <h3>Forget Password / Username </h3>        
+      <div className='box box-body'>
+        <div className='box box-header'>
+            <h3 className='box-title'>Forget Password / Username </h3>        
         </div>
 
         <form className='form-horizontal'>
@@ -17,6 +18,7 @@ export default function Forget(){
               <label>Password</label>
             </div>
         </form>
+      </div>
     </Fragment>
   )
 }

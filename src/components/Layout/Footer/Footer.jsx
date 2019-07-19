@@ -5,10 +5,11 @@ export default function Footer() {
         <div className="box box-footer with-border">
             <footer className="main-footer">
                 <div className="pull-right hidden-xs">
-                    <b>Blue IT Marketing </b> <a href="#">Contact &amp; Messaging Management Application</a>
+                    <b>Big Feather </b> <a href="#"> Music Portal</a>
                 </div>
                 <div className="pull-left hidden-xs">
-                <strong>Copyright &copy; 2012-2017 <a href="http://blueitmarketing.co.za">Blue IT Marketing Pty LTD</a>.</strong></div> All rights reserved <small>reg: 2013/078651/07</small> <small><b><a href="tel:+27790471559">Call Me : +2779 0471 559</a></b></small></footer>
+                <strong>Copyright &copy; 2019 <a href="#">Big Feather</a>.</strong></div> All rights reserved  
+                </footer>
         </div>    
         )
 }

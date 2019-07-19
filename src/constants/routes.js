@@ -8,3 +8,9 @@ export const logout_page = '/logout';
 export const signup_page = '/signup';
 export const download_page = '/download';
 export const profile_page = '/profile';
+
+export const music_page = '/music';
+export const vidoes_page = '/videos';
+export const blog_page = '/blog';
+export const admin_page = '/admin';
+export const dashboard_page = '/dashboard';
