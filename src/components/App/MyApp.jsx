@@ -13,6 +13,8 @@ import Signup from '../Auth/Signup/Signup';
 import SideBar from '../Layout/SideBar/SideBar';
 import Footer from '../Layout/Footer/Footer';
 import Forget from '../Auth/Forget/Forget';
+import Music from '../Music/Music';
+import Videos from '../Videos/Videos';
 
 export default function App () {
   return (
@@ -33,6 +35,8 @@ export default function App () {
                     <Route path ={routes.login_page} component={Login} />
                     <Route path={routes.signup_page} component={Signup} />
                     <Route path={routes.forget_password_page} component={Forget} />
+                    <Route path={routes.music_page} component={Music}/>
+                    <Route path={routes.videos_page} component={Videos} />
                   </section>
               </section>
             </div>

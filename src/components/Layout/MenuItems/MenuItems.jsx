@@ -36,11 +36,11 @@ const SideBarMenuNonAuth = () => {
             <li className="active treeview">
                 <ul className="treeview-menu">
                     <li><Link to={routes.home_page} title="Big feather Music Portal"><i className="fa fa-home"></i> Home</Link></li>
-                    <li><Link to={routes.about_page} title="Contact Us"><i className="fa fa-info"></i> About</Link></li>
+                    <li><Link to={routes.about_page} title="About Us"><i className="fa fa-info"></i> About</Link></li>
                     <li><Link to={routes.contact_page} title="Contact Us"><i className="fa fa-envelope"></i> Contact</Link></li>
-                    <li><Link to={routes.blog_page} title="Bulk Messaging &amp; Contact Management Blog"><i className="fa fa-book"> </i> <strong>Blog</strong></Link></li>
-                    <li><Link to={routes.music_page} title=""><i className="fa fa-soundcloud"> </i> <strong>Music</strong></Link></li>
-                    <li><Link to={routes.vidoes_page} title=""><i className="fa fa-youtube"> </i> <strong>Videos</strong></Link></li>
+                    <li><Link to={routes.blog_page} title="Big Feather Blog"><i className="fa fa-book"> </i> <strong>Blog</strong></Link></li>
+                    <li><Link to={routes.music_page} title="Big Feather Music Portal"><i className="fa fa-soundcloud"> </i> <strong>Music</strong></Link></li>
+                    <li><Link to={routes.videos_page} title="Big Feather Music Videos Portal"><i className="fa fa-youtube"> </i> <strong>Videos</strong></Link></li>
                     <li><Link to={routes.login_page} title="Login to Big Feather"><i className="fa fa-sign-in"> </i> Login </Link></li>
                 </ul>
             </li>
