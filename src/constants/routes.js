@@ -10,8 +10,13 @@ export const forget_password_page ='/forget';
 export const download_page = '/download';
 export const profile_page = '/profile';
 
+
 export const music_page = '/music';
 export const videos_page = '/videos';
 export const blog_page = '/blog';
-export const admin_page = '/admin';
-export const dashboard_page = '/dashboard';
+
+export const my_music_page = '/music/user/'  // + userid
+export const my_videos_page = '/videos/user/' // + userid
+
+export const admin_page = '/admin/user/'; // + userid
+export const dashboard_page = '/dashboard'; // site owner and administrator only

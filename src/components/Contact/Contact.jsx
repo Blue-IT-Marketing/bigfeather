@@ -19,7 +19,7 @@ export default function Contact() {
             <div className='box box-body'>
 
                 <div className='box-header'>
-                    <h3 className='box-title'>Contact</h3>
+                    <h3 className='box-title'> <strong> <i className='fa fa-envelope'> </i> Contact</strong></h3>
                 </div>
 
 
@@ -83,7 +83,7 @@ export default function Contact() {
                         </div>
 
                         <div className='form-group'>
-                            <button className='btn btn-success btn-block btn-lg'><strong> Send Message</strong></button>
+                            <button className='btn btn-success btn-block btn-lg'><strong> <i className='fa fa-send'> </i> Send Message</strong></button>
                         </div>
 
                     </form>

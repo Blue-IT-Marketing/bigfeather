@@ -13,7 +13,7 @@ export default function Login() {
         <Fragment>
             <div className='box box-body'>
                 <div className='box-header'>
-                    <h3 className='box-title'>Login User</h3>    
+                    <h3 className='box-title'> <strong><i className='fa fa-sign-in'> </i> Login User </strong></h3>    
                 </div>
 
                 <div className='box-footer'>                

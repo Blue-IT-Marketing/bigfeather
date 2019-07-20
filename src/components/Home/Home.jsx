@@ -7,7 +7,7 @@ export default function Home (){
       <Fragment>
         <div className='box box-body'>
           <div className='box-header'>
-            <h3 className='box-title'> Big Feather Music Portal </h3>
+          <h3 className='box-title'> <strong> <i className='fa fa-music'> </i> Big Feather Music Portal </strong></h3>
           </div>
             
 
