@@ -9,6 +9,9 @@ export default function Home (){
           <div className='box-header'>
           <h3 className='box-title'> <strong> <i className='fa fa-music'> </i> Big Feather Music Portal </strong></h3>
           </div>
+
+          Big feather music portal allows you to share your music online with your peers and also clients
+          
             
 
 

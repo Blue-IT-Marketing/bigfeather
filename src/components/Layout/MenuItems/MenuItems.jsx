@@ -69,7 +69,7 @@ export default function MenuItems (props) {
             default: return state
         }
 
-    }, {user : {...types.user}})
+    }, {user : {...types.account_details_type}})
 
     
   return (

@@ -24,7 +24,7 @@ export default class Login extends Component {
                     </div>
 
                     <div className='box-footer'>
-                        <form className='form-horizontal' onSubmit={e => HandleSubmit(e)}>
+                        <form className='form-horizontal' onSubmit={e => this.HandleSubmit(e)}>
                             <div className='form-group'>
                                 <input type='text' className='form-control' name='loginName' placeholder='Login Name' />
                             </div>

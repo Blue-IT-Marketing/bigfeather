@@ -4,7 +4,7 @@ export default class Forget extends Component {
     constructor(){
         super();
         this.state = {
-          user = {}
+          user : {}
         }
       }
 
@@ -24,7 +24,7 @@ export default class Forget extends Component {
 
             <div className='box box-footer'>
 
-              <form className='form-horizontal' onSubmit={e => sendRecoveryEmail(e)}>
+              <form className='form-horizontal' onSubmit={e => this.sendRecoveryEmail(e)}>
                 <div className='form-group'>
                   <span>Enter your username so what we can send you a password recovery message</span>
                 </div>
@@ -32,7 +32,7 @@ export default class Forget extends Component {
                   <input type='email' className='form-control' name='username' />
                 </div>
                 <div className='form-group'>
-                  <button type='submit' className='btn btn-success btn-lg' onClick={e => sendRecoveryEmail(e)}><strong> <i className='fa fa-unlock-alt'> </i> Send Recovery Email</strong></button>
+                  <button type='submit' className='btn btn-success btn-lg' onClick={e => this.sendRecoveryEmail(e)}><strong> <i className='fa fa-unlock-alt'> </i> Send Recovery Email</strong></button>
                   <button type='reset' className='btn btn-warning btn-lg'><strong> <i className='fa fa-eraser'> </i> Cancel </strong></button>
                 </div>
               </form>

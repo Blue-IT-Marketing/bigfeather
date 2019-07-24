@@ -2,14 +2,15 @@ import React, { Fragment, Component } from 'react';
 
 
 export default class Contact extends Component {
+    
     constructor(){
         super();
         this.state = {
             contant : {}
         }
-    };
+    }
 
-     ResetDefault (e) {
+    ResetDefault (e) {
         if (e.target.value === 'Message...') {
             e.target.value = ''
         }
@@ -19,7 +20,7 @@ export default class Contact extends Component {
         e.preventDefault();
         console.log('Submitting Contact Form')
     }
-    
+
 
     render() {
       return (
@@ -32,9 +33,8 @@ export default class Contact extends Component {
 
 
                   <div className='box-footer'>
-                      <form className='form-horizontal' onSubmit={e => SubmitHandler(e)}>
+                      <form className='form-horizontal' onSubmit={e => this.SubmitHandler(e)}>
                           <div className='form-group'>
-
                               <input
                                   type='text'
                                   className='form-control'
@@ -44,7 +44,6 @@ export default class Contact extends Component {
                           </div>
 
                           <div className='form-group'>
-
                               <input
                                   type='text'
                                   className='form-control'
@@ -59,7 +58,6 @@ export default class Contact extends Component {
                                   className='form-control'
                                   name='cell'
                                   placeholder='Cell'
-
                               />
                           </div>
 
@@ -91,7 +89,11 @@ export default class Contact extends Component {
                           </div>
 
                           <div className='form-group'>
-                              <button className='btn btn-success btn-block btn-lg'><strong> <i className='fa fa-send'> </i> Send Message</strong></button>
+                              <button 
+                                type='submit'
+                                className='btn btn-success btn-block btn-lg'
+                                onClick={e => this.SubmitHandler(e)}
+                                ><strong> <i className='fa fa-send'> </i> Send Message</strong></button>
                           </div>
 
                       </form>

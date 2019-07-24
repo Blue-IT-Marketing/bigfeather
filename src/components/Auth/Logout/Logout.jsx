@@ -21,7 +21,7 @@ export default class Logout extends Component {
                                 type='submit'
                                 className='btn btn-danger'
                                 name='logout'
-                                onClick={e => LogoutHandler(e)}><strong> <i className='fa fa-sign-out'> </i> Logout </strong>
+                                onClick={e => this.LogoutHandler(e)}><strong> <i className='fa fa-sign-out'> </i> Logout </strong>
                             </button>
                         </div>
                     </form>
