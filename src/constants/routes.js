@@ -15,8 +15,8 @@ export const music_page = '/music';
 export const videos_page = '/videos';
 export const blog_page = '/blog';
 
-export const my_music_page = '/music/user/'  // + userid
-export const my_videos_page = '/videos/user/' // + userid
+export const my_music_page = '/music/user/';  // + userid
+export const my_videos_page = '/videos/user/'; // + userid
 
 export const admin_page = '/admin/user/'; // + userid
 export const dashboard_page = '/dashboard'; // site owner and administrator only

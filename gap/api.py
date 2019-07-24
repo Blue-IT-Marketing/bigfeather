@@ -13,8 +13,9 @@ class APIRouterHandler(webapp2.RequestHandler):
         url_route = self.request.uri
         url_routes = url_route.split("/")
 
-        if 'load-spouse' in url_routes:
-            pass
+        
+        
+        pass
 
     def post(self):
         pass
