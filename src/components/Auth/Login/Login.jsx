@@ -16,7 +16,6 @@ export default class Login extends Component {
     }
 
     render() {
-
         return (
             <Fragment>
                 <div className='box box-body'>
