@@ -12,9 +12,8 @@ class APIRouterHandler(webapp2.RequestHandler):
     def get(self):
         url_route = self.request.uri
         url_routes = url_route.split("/")
-
         
-        
+            
         pass
 
     def post(self):
