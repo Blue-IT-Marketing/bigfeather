@@ -51,15 +51,15 @@ class Utilities {
     };
 
     isCell = (n) => {
-        return isNumber(n) ? ((n.length === 10) || (n.length === 11) || (n.length === 12) || (n.length === 13)) : false;
+        return this.isNumber(n) ? ((n.length === 10) || (n.length === 11) || (n.length === 12) || (n.length === 13)) : false;
     };
 
     isTel = (n) => {
-        return n !== undefined ? isCell(n) : false;
+        return n !== undefined ? this.isCell(n) : false;
     };
 
     isFax = (n) => {
-        return n !== undefined ? isCell(n) : false;
+        return n !== undefined ? this.isCell(n) : false;
     };
 
     getAge = (dateString) => {
@@ -82,7 +82,7 @@ class Utilities {
         return age;
     };
     isIDNumber = (n) => {
-        return n !== undefined ? (isNumber(n)) && (n.length === 13) : true;
+        return n !== undefined ? (this.isNumber(n)) && (n.length === 13) : true;
     };
     numDaysBetweenDates = (firstDate, secondDate) => {
 
