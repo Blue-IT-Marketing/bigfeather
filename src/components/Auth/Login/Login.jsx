@@ -37,10 +37,7 @@ export default class Login extends Component {
                                 <Link to={routes.forget_password_page}><button type='button' className='btn btn-warning btn-lg'><strong> <i className='fa fa-unlock'> </i> Forget Password </strong></button></Link>
                             </div>
                         </form>
-
-
                     </div>
-
                 </div>
             </Fragment>
         )
